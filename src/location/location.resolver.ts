@@ -10,7 +10,7 @@ export class LocationResolver {
   constructor(private readonly locationService:LocationService) {}
   
 
-  @Query(() => [LocationType])
+  @Query(() => LocationType)
   async Location() {
     return this.locationService.findAll();
   }
